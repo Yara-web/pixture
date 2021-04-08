@@ -88,7 +88,6 @@ body.lock {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	overflow: auto;
 	height: 100%;
 	width: 100%;
 	background-image: url(../img/the-main/gradient-purple.png);
@@ -135,7 +134,7 @@ body.lock {
 }
 @media (max-width: 760px) {
 	.the-main__content {
-		background-image: url(../img/the-main-media/the-main-bg-md4.jpg);
+		background-image: url(../img/the-main-media/the-main-bg.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -178,6 +177,12 @@ body.lock {
 	justify-content: space-around;
 	align-items: center;
 }
+@media (max-width: 750px) {
+	.header__items {
+		flex: 0 1 50%;
+		justify-content: space-evenly;
+	}
+}
 .header__text {
 	transform: rotate(-90deg);
 	display: flex;
@@ -207,7 +212,7 @@ body.lock {
 	position: relative;
 }
 
-@keyframes rrow {
+@keyframes arrow {
 	0% {
 		top: 0px;
 	}

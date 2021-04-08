@@ -157,36 +157,48 @@ body.lock {
 	width: 80px;
 	height: 100%;
 	color: white;
+	padding: 20px 0px 40px 0px;
 }
 @media (max-width: 370px) {
 	.header {
 		width: 60px;
 	}
 }
+@media (max-width: 480px) {
+	.header {
+		padding: 20px 0px 120px 0px;
+	}
+}
+@media (max-width: 380px) {
+	.header {
+		padding: 20px 0px 80px 0px;
+	}
+}
 .header__content {
-	flex: 1 1 auto;
+	flex: 1 1 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 .header__burger {
-	margin: 10px 0px 0px 0px;
+	display: inline;
 }
 .header__items {
-	flex: 0 1 30%;
+	flex: 0 1 20%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 @media (max-width: 750px) {
 	.header__items {
-		flex: 0 1 40%;
+		flex: 0 1 35%;
 	}
 }
 .header__text {
 	transform: rotate(-90deg);
 	display: flex;
+	justify-self: center;
 }
 .header__description {
 	flex: 1 0 auto;
@@ -553,6 +565,11 @@ body.lock {
 	background-size: auto;
 	padding: 100px 0px 25px 0px;
 }
+@media (max-width: 480px) {
+	.slider-content {
+		padding: 50px 0px 20px 0px;
+	}
+}
 
 .slider {
 	display: flex;
@@ -564,6 +581,18 @@ body.lock {
 	margin: 0 20px;
 	background-color: white;
 	text-align: center;
+}
+@media (max-width: 420px) {
+	.slider__item {
+		margin: 0 10px;
+		flex: 0 1 330px;
+	}
+}
+@media (max-width: 350px) {
+	.slider__item {
+		flex: 0 1 300px;
+		margin: 0px 5px;
+	}
 }
 .slider__title {
 	font-size: 25px;
@@ -612,4 +641,144 @@ body.lock {
 	background-color: #F5F5F5;
 	display: block;
 	padding: 5px 20px 20px 20px;
+}
+
+.the-main-two {
+	height: 100vh;
+	flex: 1 1 auto;
+	display: flex;
+	color: white;
+}
+.the-main-two .container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	justify-content: space-around;
+	padding: 250px 0px 0px 0px;
+}
+@media (max-width: 760px) {
+	.the-main-two .container {
+		justify-content: space-around;
+		padding: 150px 0px 0px 0px;
+	}
+}
+@media (max-width: 480px) {
+	.the-main-two .container {
+		padding: 100px 0px 0px 0px;
+	}
+}
+@media (max-width: 370px) {
+	.the-main-two .container {
+		padding: 70px 0px 0px 0px;
+		justify-content: space-evenly;
+	}
+}
+.the-main-two__content {
+	width: 100%;
+	background-image: url(../img/the-main-two/the-main-two-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media (max-width: 760px) {
+	.the-main-two__content {
+		background-image: url(../img/the-main-two/the-main-two-mob-bg.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width: 760px) {
+	.the-main-two__description .description__title {
+		margin: 0px auto 10px auto;
+	}
+}
+@media (max-width: 760px) {
+	.the-main-two__description .description__text {
+		margin: 0 10px;
+		text-align: center;
+	}
+}
+@media (max-width: 760px) {
+	.the-main-two__description .description__column {
+		text-align: center;
+	}
+}
+@media (max-width: 760px) {
+	.the-main-two__description .description__dots {
+		display: none;
+	}
+}
+.the-main-two .header-two {
+	position: relative;
+	background-color: #15032A;
+	display: flex;
+	flex-direction: column;
+	width: 80px;
+	height: 100%;
+	color: white;
+	padding: 0px 0px 0px 0px;
+}
+@media (max-width: 760px) {
+	.the-main-two .header-two {
+		display: none;
+	}
+}
+.the-main-two .header-two__content {
+	flex: 0 1 100%;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.the-main-two .header-two__items {
+	flex: 0 1 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.the-main-two .header-two__text {
+	transform: rotate(-90deg);
+	display: flex;
+	justify-self: center;
+}
+.the-main-two .header-two__description {
+	flex: 1 0 auto;
+	font-size: 12px;
+	line-height: 3.3;
+	text-align: bottom;
+}
+.the-main-two .header-two__description span {
+	font-size: 10px;
+	line-height: 4;
+	color: #B5BBC4;
+	margin: 0px 0px 0px 10px;
+}
+.the-main-two .title-two {
+	font-size: 132px;
+	line-height: 0.9;
+	letter-spacing: -6.6px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	background-image: url(../img/the-main-two/only.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-transform: uppercase;
+}
+@media (max-width: 760px) {
+	.the-main-two .title-two {
+		font-size: 100px;
+	}
+}
+@media (max-width: 480px) {
+	.the-main-two .title-two {
+		font-size: 80px;
+		background-image: none;
+	}
+}
+@media (max-width: 400px) {
+	.the-main-two .title-two {
+		font-size: 65px;
+	}
 }

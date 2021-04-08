@@ -16,13 +16,17 @@ $(document).ready(function(){
 			{
 				breakpoint:760,
 				settings: {
-					
+					arrows:false,
+					initialSlide:5,
+					slidesToShow:1,
 				}
 			},
 			{
 				breakpoint:480,
 				settings: {
-					
+					arrows:false,
+					initialSlide:5,
+					slidesToShow:1,
 				}
 			},
 

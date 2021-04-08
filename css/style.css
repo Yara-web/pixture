@@ -169,6 +169,9 @@ body.lock {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.header__burger {
+	margin: 10px 0px 0px 0px;
+}
 .header__items {
 	flex: 0 1 30%;
 	display: flex;
@@ -209,6 +212,7 @@ body.lock {
 	animation: arrow 1.3s infinite linear;
 	position: relative;
 }
+
 @keyframes arrow {
 	0% {
 		top: 0px;

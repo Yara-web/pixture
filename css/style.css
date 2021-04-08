@@ -88,7 +88,6 @@ body.lock {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	width: 100%;
 	background-image: url(../img/the-main/gradient-purple.png);
 	background-position: top right;
@@ -161,7 +160,7 @@ body.lock {
 }
 @media (max-width: 370px) {
 	.header {
-		width: 70px;
+		width: 60px;
 	}
 }
 .header__content {
@@ -174,13 +173,12 @@ body.lock {
 	flex: 0 1 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
 }
 @media (max-width: 750px) {
 	.header__items {
-		flex: 0 1 50%;
-		justify-content: space-evenly;
+		flex: 0 1 40%;
 	}
 }
 .header__text {
@@ -211,7 +209,6 @@ body.lock {
 	animation: arrow 1.3s infinite linear;
 	position: relative;
 }
-
 @keyframes arrow {
 	0% {
 		top: 0px;

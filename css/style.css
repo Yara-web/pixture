@@ -81,10 +81,11 @@ body {
 	font-family: "Montserrat";
 }
 
-body.lock {
-	overflow: hidden;
+@media (max-width: 760px) {
+	body.lock {
+		overflow: hidden;
+	}
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -93,6 +94,11 @@ body.lock {
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-color: #15032A;
+}
+@media (max-width: 760px) {
+	.wrapper {
+		background-image: none;
+	}
 }
 
 .the-main {
@@ -174,6 +180,11 @@ body.lock {
 		padding: 20px 0px 80px 0px;
 	}
 }
+@media screen and (orientation: landscape) and (max-width: 600px) {
+	.header {
+		padding: 0px 0px 0px 0px;
+	}
+}
 .header__content {
 	flex: 1 1 100%;
 	display: flex;
@@ -237,7 +248,7 @@ body.lock {
 	}
 }
 .burger-menu {
-	z-index: 100;
+	z-index: 101;
 	display: block;
 	position: relative;
 	height: 25px;
@@ -295,8 +306,8 @@ body.lock {
 
 .burger__nav {
 	position: absolute;
-	top: -500%;
-	left: 0%;
+	left: -500%;
+	top: 0%;
 	transition: 1s;
 }
 .burger__nav.active {
@@ -304,22 +315,28 @@ body.lock {
 	background-color: #15032A;
 	z-index: 100;
 	top: 0%;
-	left: 100%;
-	width: 100%;
+	left: 72px;
+	width: 30%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	overflow: auto;
 	position: fixed;
 }
-@media (max-width: 480px) {
+@media (max-width: 760px) {
+	.burger__nav.active {
+		overflow: auto;
+		position: fixed;
+	}
+}
+@media (max-width: 760px) {
 	.burger__nav.active {
 		width: 100vw;
 		height: 100vh;
 		overflow: auto;
-		left: 14%;
+		left: 10%;
+		top: 0%;
 	}
 }
 .burger__list {
@@ -330,6 +347,12 @@ body.lock {
 	display: block;
 	color: white;
 	text-transform: uppercase;
+}
+@media (min-width: 1000px) {
+	.burger__link:hover {
+		font-size: 17px;
+		transition: 0.5s;
+	}
 }
 
 .title {
@@ -375,6 +398,18 @@ body.lock {
 	.title {
 		font-size: 60px;
 		padding-left: 10px;
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 760px) {
+	.title {
+		font-size: 100px;
+		padding: 10px 0px 20px 40px;
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 600px) {
+	.title {
+		font-size: 80px;
+		padding: 10px 0px 20px 40px;
 	}
 }
 .title__text span {
@@ -569,6 +604,12 @@ body.lock {
 		padding: 40px 0px 20px 0px;
 	}
 }
+@media (max-width: 760px) {
+	.slider-content {
+		background-image: none;
+		background-color: #15032A;
+	}
+}
 .slider-content .slider__uptitle {
 	color: #f5f5f5;
 	margin: 0px 0px 40px 18%;
@@ -670,6 +711,11 @@ body.lock {
 	.the-main-two .container {
 		justify-content: space-around;
 		padding: 150px 0px 0px 0px;
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 760px) {
+	.the-main-two .container {
+		padding: 0px 0px 0px 0px;
 	}
 }
 @media (max-width: 480px) {
@@ -1073,9 +1119,15 @@ body.lock {
 	max-width: 1000px;
 	padding: 75px 0px 115px 0px;
 }
+@media (max-width: 380px) {
+	.footer .container {
+		padding: 45px 0px 40px 0px;
+	}
+}
 .footer__body {
 	display: flex;
 	flex-direction: column;
+	margin: 0px 10px 0px 10px;
 }
 .footer__item_columns {
 	display: flex;
@@ -1089,9 +1141,19 @@ body.lock {
 		align-items: center;
 	}
 }
+@media (max-width: 380px) {
+	.footer__item_columns {
+		display: block;
+	}
+}
 .footer__item_text {
 	display: flex;
 	justify-content: space-evenly;
+}
+@media (max-width: 380px) {
+	.footer__columns {
+		padding: 0px 0px 30px 0px;
+	}
 }
 .footer__text {
 	font-size: 12px;
@@ -1112,31 +1174,31 @@ body.lock {
 		display: block;
 	}
 }
-.footer .column-footer {
+
+.column-footer {
 	text-align: left;
 }
-.footer .column-footer__title {
-	color: white;
+@media (max-width: 380px) {
+	.column-footer {
+		text-align: center;
+	}
+}
+.column-footer__title {
+	color: #0A675F;
 	font-size: 11px;
 	line-height: 1.09;
 	text-transform: uppercase;
 	margin: 0px 0px 20px 0px;
 }
-.footer .column-footer__text {
+.column-footer__text {
 	font-size: 12px;
 	line-height: 2;
 	max-width: 300px;
 }
-.footer .column-footer__link {
+.column-footer__link {
 	font-size: 12px;
 	line-height: 2;
 	color: #ffffff;
 	display: inline-block;
 	padding: 5px 0px;
-}
-
-@media (max-width: 760px) {
-	.column-footer_hid {
-		display: none;
-	}
 }

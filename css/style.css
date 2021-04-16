@@ -1345,10 +1345,6 @@ body {
   .footer__text span {
     display: block;
   }
-
-  .title {
-    background-image: none;
-  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 760px) {

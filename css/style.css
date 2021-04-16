@@ -2,6 +2,10 @@
 
 /*Обнуление*/
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -91,6 +95,10 @@ h6 {
 }
 
 /*--------------------*/
+
+/* Шрифты */
+
+/* Стили================>>> */
 
 html {
   scroll-behavior: smooth;
@@ -1325,12 +1333,17 @@ body {
   .footer__text span {
     display: block;
   }
+
+  .title {
+    background-image: none;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 760px) {
   .title {
     font-size: 100px;
     padding: 10px 0px 20px 40px;
+    background-image: none;
   }
 
   .the-main-two .container {

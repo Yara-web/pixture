@@ -109,9 +109,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-image: url(../img/the-main/gradient-purple.png);
-  background-position: top right;
-  background-repeat: no-repeat;
   background-color: #15032A;
 }
 
@@ -414,9 +411,6 @@ body {
   font-weight: bold;
   text-align: center;
   position: relative;
-  background-image: url(../img/the-main/ellipseYour.png);
-  background-repeat: no-repeat;
-  background-position: center center;
   text-transform: uppercase;
 }
 
@@ -586,7 +580,7 @@ body {
 
 .slider__like .img-relative {
   position: relative;
-  max-width: 100%;
+  max-width: 379px;
 }
 
 .slider__like .img-absolute {
@@ -596,10 +590,6 @@ body {
 }
 
 .slider-content {
-  background-image: url("../img/slider-up/slider-bg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 52%;
   padding: 50px 0px 25px 0px;
 }
 
@@ -819,17 +809,7 @@ body {
   font-weight: bold;
   text-align: center;
   position: relative;
-  background-image: url(../img/the-main-two/only.png);
-  background-repeat: no-repeat;
-  background-position: center center;
   text-transform: uppercase;
-}
-
-.background {
-  background-image: url(../img/slider-up/slider-bg.png);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 49% 60%;
 }
 
 .article {
@@ -1104,6 +1084,40 @@ body {
   padding: 5px 0px;
 }
 
+@media (min-width: 760px) {
+  .wrapper {
+    background-image: url(../img/the-main/gradient-purple.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    background-image: url(../img/the-main/ellipseYour.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .slider-content {
+    background-image: url("../img/slider-up/slider-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 52%;
+  }
+
+  .the-main-two .title-two {
+    background-image: url(../img/the-main-two/only.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .background {
+    background-image: url(../img/slider-up/slider-bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 49% 60%;
+  }
+}
+
 @media (min-width: 1000px) {
   .burger__link:hover {
     font-size: 17px;
@@ -1116,10 +1130,6 @@ body {
 @media (max-width: 760px) {
   body.lock {
     overflow: hidden;
-  }
-
-  .wrapper {
-    background-image: none;
   }
 
   .the-main .container {
@@ -1155,7 +1165,6 @@ body {
   .title {
     text-align: left;
     padding-left: 40px;
-    background-image: none;
   }
 
   .title__text .your {
@@ -1215,10 +1224,6 @@ body {
 
   .the-main-two .title-two {
     font-size: 100px;
-  }
-
-  .background {
-    background-image: none;
   }
 
   .article {
@@ -1324,10 +1329,6 @@ body {
 
   .footer__text span {
     display: block;
-  }
-
-  #background-none {
-    background-image: none;
   }
 }
 
@@ -1548,16 +1549,23 @@ body {
   }
 }
 @supports (-webkit-appearance:none){
-.wrapper{background-image:url(../img/the-main/gradient-purple.webp)}
 .the-main__content{background-image:url(../img/the-main/the-main-bg.webp)}
-.title{background-image:url(../img/the-main/ellipseYour.webp)}
 .slider .slick-arrow.slick-prev{background:url("../img/slider-up/sl-arrow_l.svg") 0 0/100% no-repeat}
 .slider .slick-arrow.slick-next{background:url("../img/slider-up/sl-arrow_r.svg") 0 0/100% no-repeat}
-.slider-content{background-image:url("../img/slider-up/slider-bg.webp")}
 .the-main-two__content{background-image:url(../img/the-main-two/the-main-two-bg.webp)}
+.author{background-image:url(../img/under-slider/author-bg.webp)}
+}
+
+ @media (min-width: 760px){
+
+@supports (-webkit-appearance:none){
+.wrapper{background-image:url(../img/the-main/gradient-purple.webp)}
+.title{background-image:url(../img/the-main/ellipseYour.webp)}
+.slider-content{background-image:url("../img/slider-up/slider-bg.webp")}
 .the-main-two .title-two{background-image:url(../img/the-main-two/only.webp)}
 .background{background-image:url(../img/slider-up/slider-bg.webp)}
-.author{background-image:url(../img/under-slider/author-bg.webp)}
+}
+
 }
 
  @media (min-width: 1000px){

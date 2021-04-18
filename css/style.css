@@ -1084,15 +1084,13 @@ body {
   padding: 5px 0px;
 }
 
-@media (min-width: 760px) and (orientation: landscape) {
+@media (min-width: 760px) and (min-height: 760px) {
   .wrapper {
     background-image: url(../img/the-main/gradient-purple.png);
     background-position: top right;
     background-repeat: no-repeat;
   }
-}
 
-@media (min-width: 760px) {
   .title {
     background-image: url(../img/the-main/ellipseYour.png);
     background-repeat: no-repeat;
@@ -1550,6 +1548,12 @@ body {
     margin: 0px 5px;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .wrapper {
+    background-image: none;
+  }
+}
 @supports (-webkit-appearance:none){
 .the-main__content{background-image:url(../img/the-main/the-main-bg.webp)}
 .slider .slick-arrow.slick-prev{background:url("../img/slider-up/sl-arrow_l.svg") 0 0/100% no-repeat}
@@ -1558,17 +1562,10 @@ body {
 .author{background-image:url(../img/under-slider/author-bg.webp)}
 }
 
- @media (min-width: 760px) and (orientation: landscape){
+ @media (min-width: 760px) and (min-height: 760px){
 
 @supports (-webkit-appearance:none){
 .wrapper{background-image:url(../img/the-main/gradient-purple.webp)}
-}
-
-}
-
- @media (min-width: 760px){
-
-@supports (-webkit-appearance:none){
 .title{background-image:url(../img/the-main/ellipseYour.webp)}
 .slider-content{background-image:url("../img/slider-up/slider-bg.webp")}
 .the-main-two .title-two{background-image:url(../img/the-main-two/only.webp)}
@@ -1684,6 +1681,14 @@ body {
 }
 
  @media (max-width: 350px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (orientation: landscape){
 
 @supports (-webkit-appearance:none){
 

@@ -1127,6 +1127,54 @@ body {
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 480px) {
+  .the-main .container {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .the-main__message {
+    display: none;
+  }
+
+  .header {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .header__items {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+  }
+
+  .header__description {
+    font-size: 10px;
+  }
+
+  .title {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 80px;
+  }
+
+  .title__text .your {
+    display: block;
+  }
+
+  .description__column.description__column_hid {
+    display: none;
+  }
+
+  .description__title {
+    text-align: left;
+    margin: 10px 0px 10px 40px;
+  }
+
+  .description__text {
+    text-align: left;
+    margin: 0px 10px 0px 40px;
+  }
+}
+
 @media (max-width: 760px) {
   body.lock {
     overflow: hidden;
@@ -1320,16 +1368,6 @@ body {
             justify-content: space-evenly;
   }
 
-  .header {
-    padding: 0px 0px 0px 0px;
-  }
-
-  .title {
-    text-align: left;
-    padding-left: 40px;
-    font-size: 70px;
-  }
-
   .title {
     font-size: 80px;
     padding: 10px 0px 20px 40px;
@@ -1342,6 +1380,12 @@ body {
 }
 
 @media screen and (max-width: 760px) {
+  .title {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 80px;
+  }
+
   .description__title {
     margin: 0px 30px 10px 50px;
   }
@@ -1398,7 +1442,7 @@ body {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 540px) {
+@media screen and (max-width: 540px) {
   .title {
     font-size: 70px;
   }
@@ -1583,6 +1627,14 @@ body {
 
 }
 
+ @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 480px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 760px){
 
 @supports (-webkit-appearance:none){
@@ -1641,7 +1693,7 @@ body {
 
 }
 
- @media screen and (orientation: landscape) and (max-width: 540px){
+ @media screen and (max-width: 540px){
 
 @supports (-webkit-appearance:none){
 

@@ -1132,6 +1132,14 @@ body {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .the-main-two .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
 @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 480px) {
   .the-main .container {
     padding: 0px 0px 20px 0px;
@@ -1181,6 +1189,12 @@ body {
 
   .the-main-two .container {
     padding: 0px 0px 0px 0px;
+  }
+
+  .the-main-two .header-two__items {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
   }
 
   .the-main-two .title-two {
@@ -1653,6 +1667,14 @@ body {
 }
 
  @media (min-width: 1000px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 1366px){
 
 @supports (-webkit-appearance:none){
 

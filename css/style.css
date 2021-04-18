@@ -1333,8 +1333,12 @@ body {
 }
 
 @media screen and (orientation: landscape) and (max-width: 760px) {
+  .header {
+    padding: 0px 0px 0px 0px;
+  }
+
   .title {
-    font-size: 100px;
+    font-size: 80px;
     padding: 10px 0px 20px 40px;
     background-image: none;
   }
@@ -1354,7 +1358,7 @@ body {
 
 @media (max-width: 680px) {
   .title {
-    font-size: 100px;
+    font-size: 80px;
   }
 
   .description__title {
@@ -1373,12 +1377,8 @@ body {
 }
 
 @media screen and (orientation: landscape) and (max-width: 600px) {
-  .header {
-    padding: 0px 0px 0px 0px;
-  }
-
   .title {
-    font-size: 80px;
+    font-size: 70px;
     padding: 10px 0px 20px 40px;
   }
 }
@@ -1401,7 +1401,7 @@ body {
 
 @media (max-width: 540px) {
   .title {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 

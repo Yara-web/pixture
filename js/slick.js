@@ -7,9 +7,9 @@ $(document).ready(function(){
 		easing:'linear',
 		infinite:false,
 		initialSlide:3,
-		draggable:true,
+		draggable:false,
 		touchTreshold:10,
-		waitForAnimate:true,
+		waitForAnimate:false,
 		centerMode:true,
 		variableWidth:true,
 		responsive:[

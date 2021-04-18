@@ -513,29 +513,7 @@ body {
           justify-content: center;
 }
 
-/* Слайд */
 
-/* Слайд активный (показывается) */
-
-/* Слайд основной */
-
-/* Слайд по центру */
-
-/* Клонированный слайд */
-
-/* Стрелка */
-
-/* Стрелка влево */
-
-/* Стрелка вправо */
-
-/* Стрелка не активная */
-
-/* Точки (булиты) */
-
-/* Активная точка */
-
-/* Элемент точки */
 
 .slider {
   position: relative;
@@ -1325,6 +1303,7 @@ body {
   .footer__text span {
     display: block;
   }
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 760px) {
@@ -1668,4 +1647,11 @@ body {
 
 }
 
+}
+
+
+@media	(max-width:760px) {
+	.wrapper, .title, .slider-content, .title-two, .background {
+		background-image: none;
+	}
 }

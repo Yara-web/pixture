@@ -1132,12 +1132,6 @@ body {
     overflow: hidden;
   }
 
-  .the-main .container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-
   .the-main__content {
     background-image: url(../img/the-main-media/the-main-bg.jpg);
     background-position: center center;
@@ -1320,8 +1314,20 @@ body {
 }
 
 @media screen and (orientation: landscape) and (max-width: 760px) {
+  .the-main .container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
   .header {
     padding: 0px 0px 0px 0px;
+  }
+
+  .title {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 70px;
   }
 
   .title {
@@ -1336,11 +1342,6 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-  .title {
-    text-align: left;
-    padding-left: 40px;
-  }
-
   .description__title {
     margin: 0px 30px 10px 50px;
   }
@@ -1359,10 +1360,6 @@ body {
 }
 
 @media screen and (max-width: 680px) {
-  .title {
-    font-size: 80px;
-  }
-
   .description__title {
     position: static;
   }
@@ -1401,7 +1398,7 @@ body {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (orientation: landscape) and (max-width: 540px) {
   .title {
     font-size: 70px;
   }
@@ -1558,12 +1555,6 @@ body {
     margin: 0px 5px;
   }
 }
-
-@media screen and (orientation: landscape) {
-  .wrapper {
-    background-image: none;
-  }
-}
 @supports (-webkit-appearance:none){
 .the-main__content{background-image:url(../img/the-main/the-main-bg.webp)}
 .slider .slick-arrow.slick-prev{background:url("../img/slider-up/sl-arrow_l.svg") 0 0/100% no-repeat}
@@ -1650,7 +1641,7 @@ body {
 
 }
 
- @media screen and (max-width: 540px){
+ @media screen and (orientation: landscape) and (max-width: 540px){
 
 @supports (-webkit-appearance:none){
 
@@ -1731,14 +1722,6 @@ body {
 }
 
  @media (max-width: 350px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media screen and (orientation: landscape){
 
 @supports (-webkit-appearance:none){
 

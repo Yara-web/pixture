@@ -230,7 +230,6 @@ body {
           flex: 1 0 auto;
   font-size: 12px;
   line-height: 3.3;
-  text-align: bottom;
 }
 
 .header__description span {
@@ -792,7 +791,6 @@ body {
           flex: 1 0 auto;
   font-size: 12px;
   line-height: 3.3;
-  text-align: bottom;
 }
 
 .the-main-two .header-two__description span {

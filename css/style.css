@@ -580,7 +580,7 @@ body {
 
 .slider__like .img-relative {
   position: relative;
-  max-width: 379px;
+  max-width: 100%;
 }
 
 .slider__like .img-absolute {

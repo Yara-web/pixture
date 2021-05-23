@@ -98,6 +98,7 @@ h6 {
 
 body {
   font-family: "Montserrat";
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -616,7 +617,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 379px;
           flex: 0 1 379px;
-  margin: 0 20px;
+  margin: 0 15px;
   background-color: white;
   text-align: center;
 }
@@ -659,7 +660,6 @@ body {
 
 .slider__comments {
   font-size: 12px;
-  line-height: 3.3;
   color: #0c2539;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1252,6 +1252,10 @@ body {
     background-color: #15032A;
   }
 
+  .slider__item {
+    margin: 0px 0px 0px 20px;
+  }
+
   .the-main-two__content {
     background-image: url(../img/the-main-two/the-main-two-mob-bg.jpg);
     background-position: center center;
@@ -1521,6 +1525,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .slider__like .img-absolute {
+    right: 14%;
+    bottom: 7%;
+  }
+
   .slider-content {
     padding: 40px 0px 20px 0px;
   }
@@ -1572,7 +1581,7 @@ body {
 
 @media (max-width: 420px) {
   .slider__item {
-    margin: 0 10px;
+    margin: 0 5px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 330px;
             flex: 0 1 330px;
@@ -1639,9 +1648,9 @@ body {
 @media (max-width: 350px) {
   .slider__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 300px;
-            flex: 0 1 300px;
-    margin: 0px 5px;
+        -ms-flex: 0 1 295px;
+            flex: 0 1 295px;
+    margin: 0 5px 0 5px;
   }
 }
 @supports (-webkit-appearance:none){

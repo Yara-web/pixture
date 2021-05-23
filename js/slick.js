@@ -1,16 +1,16 @@
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
-		slidesToShow:4,
+		slidesToShow:3,
 		slidesToScroll:1,
 		speed:500,
 		easing:'linear',
 		infinite:false,
-		initialSlide:3,
+		initialSlide:2,
 		draggable:false,
 		touchTreshold:10,
 		waitForAnimate:false,
-		centerMode:true,
+		centerMode:false,
 		variableWidth:true,
 		responsive:[
 			{
@@ -19,6 +19,7 @@ $(document).ready(function(){
 					arrows:false,
 					initialSlide:5,
 					slidesToShow:1,
+					centerMode:true,
 				}
 			},
 			{
@@ -27,8 +28,9 @@ $(document).ready(function(){
 					arrows:false,
 					initialSlide:5,
 					slidesToShow:1,
+					centerMode:true,
 				}
-			},
+			}
 
 		]
 	});

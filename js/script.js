@@ -1,8 +1,19 @@
+
+"use strict"
+
 document.querySelector('.burger-menu').addEventListener('click', function(){
 	document.querySelector('.burger__nav').classList.toggle('active');
 	document.querySelector('.burger-menu').classList.toggle('active');
 	document.querySelector('body').classList.toggle('lock');
 });
+
+document.querySelector('.burger__list').addEventListener('click', function(){
+	document.querySelector('.burger__nav').classList.remove('active');
+	document.querySelector('.burger-menu').classList.remove('active');
+	document.querySelector('body').classList.remove('lock');
+});
+
+
 
 function testWebP(callback) {
 
@@ -22,3 +33,16 @@ function testWebP(callback) {
 	}
 	});
 
+
+	const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
